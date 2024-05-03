@@ -1,0 +1,779 @@
+@import url('style.css');
+
+
+body{overflow-x: hidden;}
+
+div.brand{
+    width: 100%;
+    padding: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+div.brand > h1{
+    font-size: 38pt;
+    font-weight: bold;
+}
+
+div.brand > h2{
+    font-size: 24pt;
+    font-weight: lighter;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #288BE4;
+    margin: 0 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+}
+
+button.prev, button.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #5600d3;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22pt;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.card div.imgPlaceHolder{
+    width: 60%;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;    
+}
+
+div.cardDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    width: 40%;
+    text-align: left;
+}
+
+div.subCardDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+}
+
+div.subCardDesc > div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+div.subCardDesc > div > *{
+    padding: 5px 2px;
+}
+
+
+div.videoAside{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #5600d3;
+    align-items: center;
+}
+
+div.videoArea{
+    width: 70%;
+    height: 100%;
+}
+
+div.videoAside > aside{
+    border: 1px solid rgba(128, 128, 128, 0.533);
+    padding: 10px;
+    width: 25%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    height: 100%;
+    border-radius: 15px;
+}
+
+div.headerVideos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    color: #5600d3;
+    padding: 10px;
+}
+
+div.headerVideos > a{
+    text-decoration: none;
+    color: #5600d3;
+}
+
+div.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    color: purple;
+
+}
+
+div.video{
+    height: 200px;
+    width: 350px;
+    margin: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+div.video > video, div.video > img, div.video > iframe{
+    height: 100%;
+    width: 100%;
+}
+
+a.cardArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #5600d3;
+}
+
+a.cardArea > div{
+    height: 120px;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+
+}
+
+button.btnSeeMoreArea{
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #5600d3;
+
+}
+
+div.newsLetter{
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 20px;
+    background-color: #5600d3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+div.newsLetter > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px auto;
+}
+
+div.newsLetter > form > input:not([type="submit"]){
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+div.newsLetter > form > input[type="submit"]{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: white solid 1px;
+    background-color: #5600d3;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+div.byArea{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+div.listAreas{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 75%;
+    margin-top: 30px;
+}
+
+div.listAreasHeader{
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    color: #5600d3;
+}
+
+div.listAreasHeader > a{
+    text-decoration: none;
+    color: #5600d3;
+}
+
+a.cardListAreas{
+    text-decoration: none;
+    color: #5600d3;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    margin: 0 15px;
+    margin-top: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+div.imgPlaceHolderListAreas{
+    height: 100px;
+    background-size: cover;
+}
+
+div.cardListAreasDesc{
+    padding: 10px;
+    text-align: left;
+    font-size: 12pt;
+}
+
+div.cardListAreasDesc > span.date{
+    display: block;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #288BE4;
+    margin: 5px 0;
+}
+
+div.cardListAreasDesc > span.cardListLocation{
+    display: block;
+    font-weight: bold;
+    font-size: 10pt;
+    margin: 5px 0;
+}
+
+a.seeMoreEvents{
+    background-color: #5600d3;
+    color: white;
+    display: block;
+    text-align: center;
+    width: max-content;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+div.fastContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #5600d3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+div.outsideBox{
+    width: 60%;
+    height: 500px;
+    background-color: #3c0096;
+}
+
+div.insideBox{
+    width: 90%;
+    height: 500px;
+    background-color: #5600d3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+div.backgroundVideoSpace{
+    position: relative;
+    width: 40%;
+    background-color: black;
+    height: 500px;
+}
+
+div.backgroundVideoSpace video {
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+div.overlayVideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+}
+
+div.areaDivulgar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E6E7E8;
+    padding: 70px 0;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    color: #5600d3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+div.areaDivulgar > h2{
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+div.areaDivulgar > span{
+    font-size: 12pt;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+}
+
+div.areaDivulgar > *{
+    margin: 10px;
+}
+
+div.areaDivulgar > a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #5600d3;
+    border-radius: 20px;
+    animation: pulse 2s infinite;
+    
+}
+
+
+div.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #5600d3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    padding: 30px;
+}
+
+div.partners > img{
+    height: 80px;
+    margin: 0 80px;
+}
+
+div.partners > img#divulga-ai{
+    height: 50px;
+}
+
+/*--------MEDIA QUERIES---------*/
+
+button.prev:hover{
+    background-color: #5600d3;
+    color: white;
+    transition: all 0.3s;
+    scale: 1.05;
+}
+
+button.next:hover{
+    background-color: #5600d3;
+    color: white;
+    transition: all 0.3s;
+    scale: 1.05;
+}
+
+a.card:hover{
+    background-color: #257fce;
+    transition: all 0.3s;
+}
+
+a.card:hover{
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+a.card:hover > div.imgPlaceHolder{
+    scale: 1.005;
+    transition: all 0.3s;
+}
+
+div.video:hover{
+    scale: 1.1;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.8);
+    transition: all 0.3s;
+}
+
+div.imgPlaceHolderArea:hover{
+    scale: 1.05;
+    transition: all 0.3s;
+
+}
+
+div.headerVideos > a:hover, div.listAreasHeader > a:hover{
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-decoration: underline;
+    text-decoration-color: #5400d31c;
+}
+
+button.btnSeeMoreArea:hover{
+    background-color: white;
+    color: #5600d3;;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+a.cardArea > span:hover{
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+
+div.newsLetter > form > input[type="submit"]:hover{
+    background-color: white;
+    color: #5600d3;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    scale: 1.05;
+    font-weight: bold;
+}
+
+div.newsLetter > form > input:not([type="submit"]):hover{
+    scale: 1.01;
+    transition: all 0.3s;
+}
+
+a.cardListAreas:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    scale: 1.05;
+}
+
+
+a.seeMoreEvents:hover{
+    background-color: white;
+    transition: all 0.3s;
+    color: #5600d3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+div.areaDivulgar a:hover{
+    background-color: white;
+    color: #5600d3;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    
+    
+}
+
+@media screen and (max-width: 1465px){
+    a.card{
+        width: 60%;
+        
+    }
+
+    div.brand > h1{
+        font-size: 32pt;
+    }
+
+    div.brand > h2{
+        font-size: 20pt;
+    }
+
+    .card h1{
+        font-size: 14pt;
+    }
+
+    .card h3{
+        font-size: 12pt;
+    }
+
+    .card > div{
+        font-size: 8pt;
+    }
+
+    .card div.imgPlaceHolder{
+        width: 60%;
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;    
+    }
+
+    img.banner{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    aside{
+        display: none;
+    }
+
+    div.videoArea{
+        width: 100%;
+    }
+
+    div.brand{
+        margin-top: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width: 950px){
+    div.brand > h1{
+        font-size: 28pt;
+    }
+
+    div.brand > h2{
+        font-size: 18pt;
+    }
+
+
+    .card h1{
+        font-size: 12pt;
+    }
+
+    .card h3{
+        font-size: 10pt;
+    }
+
+    .card > div{
+        font-size: 6pt;
+    }
+
+    .card div.imgPlaceHolder{
+        width: 60% !important;
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;    
+    }
+}
+
+@media screen and (max-width: 900px){
+    img.banner{
+        height: 600px !important;
+    }
+
+    div.partners{
+        padding: 20px;
+    }
+
+    div.partners > img{
+        height: 50px;
+        margin: 0 40px;
+    }
+
+    div.partners > img#divulga-ai{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    div.brand > h1{
+        font-size: 22pt;
+    }
+
+    div.brand > h2{
+        font-size: 16pt;
+    }
+
+    img.banner{
+        height: 550px !important;
+    }
+
+    div.subCardDesc > h3{
+        display: none;
+    }
+
+    div.slider{
+        width: 100%;
+    }
+
+    div.areaDivulgar > h2{
+        font-size: 20pt;
+    }
+
+    div.areaDivulgar > span{
+        font-size: 10pt;
+    }
+
+
+}
+
+@media screen and (max-width: 850px){
+    div.brand > h1{
+        font-size: 20pt;
+    }
+
+    div.brand > h2{
+        font-size: 14pt;
+    }
+
+    img.banner{
+        height: 500px !important;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .card div.imgPlaceHolder{
+        height: 200px !important;
+    }
+
+    .card h1{
+        font-size: 10pt;
+    }
+
+    div.areaDivulgar > h2{
+        font-size: 16pt;
+    }
+
+    div.areaDivulgar > span{
+        font-size: 10pt;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 585px){
+    div.brand {
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    img.banner{
+        height: 450px !important;
+    }
+
+    div.brand > h1{
+        font-size: 18pt;
+    }
+
+    div.brand > h2{
+        font-size: 12pt;
+    }
+
+    .card{
+        width: 85% !important;
+    }
+
+    div.areaDivulgar > h2{
+        font-size: 14pt;
+    }
+
+    div.areaDivulgar > span{
+        font-size: 10pt;
+    }
+    div.newsLetter > form {
+        width: 80%;
+        
+    }
+
+    a.cardListAreas{
+        width: 300px !important;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    div.partners > img{
+        height: 30px;
+        margin: 0 20px;
+    }
+
+    a.seeMoreEvents{
+        padding: 10px 20px;
+    }
+
+    .prev, .next{
+        font-size: 18pt !important;
+        padding: 5px 15px !important;
+    }
+
+    div.areaDivulgar > h2{
+        font-size: 12pt;
+    }
+
+    div.areaDivulgar > span{
+        font-size: 10pt;
+    }
+}
