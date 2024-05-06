@@ -1,0 +1,195 @@
+@import url('./style.css');
+
+
+body{
+    background: linear-gradient(to bottom, #5600d3, #fff);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+div.imageBrand{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+div.eventInfo{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div.eventInfo h1{
+    font-size: 1.5em;
+    color: #5600d3;
+    margin-bottom: 10px;
+}
+
+div.eventInfo i{
+    color: #5600d3;
+
+}
+
+div.eventInfoDesc{
+    width: 80%;
+}
+
+div.eventInfo a{
+    padding: 10px 20px;
+    background-color: #5600d3;
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+div.eventContent{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+}
+div.eventContent h2{
+    font-size: 1.8em;
+    color: #5600d3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.eventContent p{
+    font-size: 1em;
+    color: #333;
+    text-align: justify;
+}
+
+
+
+
+/*--------------------MEDIA QUERIES----------------------*/
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+div.eventInfo a:hover{
+    background-color: white;
+    color: #5600d3;
+    transition: 0.2s;
+    scale: 1.1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+
+@media screen and (max-width: 1040px){
+    div.imageBrand{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    div.navInfo{
+        justify-content: center !important;
+    }
+
+    div.eventInfoDesc{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    div.eventInfo a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+
+    }
+
+    div.eventInfo h1{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    div.imageBrand{
+        height: 200px;
+    }
+
+    div.eventInfo{
+        flex-direction: column;
+    }
+
+    div.eventInfoDesc{
+        width: 100%;
+    }
+
+    div.eventInfoDesc span{
+        font-size: 0.8em;
+    }
+
+    div.eventInfo a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+
+    div.eventInfo h1{
+        font-size: 1.2em;
+    }
+
+    div.eventContent{
+        padding: 20px;
+    }
+
+    div.eventContent h2{
+        font-size: 1.5em;
+    }
+
+    div.eventContent p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.eventInfo a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    div.eventInfo h1{
+        font-size: 1em;
+    }
+
+    div.eventContent h2{
+        font-size: 1.2em;
+    }
+
+    div.eventContent p{
+        font-size: 0.8em;
+    }
+}
+
+

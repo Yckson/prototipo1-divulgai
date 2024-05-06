@@ -1,5 +1,47 @@
 let QTD_CARDS_LISTAREAS = 4;
 let QTD_CARDS_LISTAREAS_LINHAS = 3;
+const headerList = ['Popular na sua região', 'Artes', 'Engenharias'];
+
+function construirCartoes(area){
+    let cardsPorArea = buscar(area, 'area');
+    let cards = '';
+    cards += `<div class="listAreas">`;
+    for (let i = 0; i < QTD_CARDS_LISTAREAS; i++) {
+        if (cardsPorArea[i] != undefined) {
+            cards += `
+            <a href="./src/views/evento/?id=${cardsPorArea[i].id}" class="cardListAreas">
+                <div class="imgPlaceHolderListAreas" style="background-image: url('./src/temp_events/img/${cardsPorArea[i].iconImg}');"></div>
+                <div class="cardListAreasDesc">
+                    <span class="date">${cardsPorArea[i].dataExtenso}</span>
+                    <span class="cardListTitle">${cardsPorArea[i].nome}</span>
+                    <span class="cardListLocation">${cardsPorArea[i].local}</span>
+                </div>  
+            </a>
+        `;
+        }
+        
+    }
+    cards += `</div>`;
+    return cards;
+}
+
+function construirCardListAreas(headerList){
+    let listAreas = '';
+
+    for (let c = 0; c < headerList.length; c++) {
+        listAreas += `
+            <div class="listAreasHeader">
+                <h3>${headerList[c]}</h3>
+                <a href="#">Ver mais <i class="fa fa-caret-right" aria-hidden="true"></i></a>   
+            </div>
+        `;
+        listAreas += construirCartoes(headerList[c]);
+        
+    }
+    return listAreas;
+}
+
+
 
 function recalculateCardsListAreas(){
     const windowWidth = $(window).width();
@@ -32,6 +74,14 @@ function recalculateCardsListAreas(){
 
 $(document).ready(function() {
     recalculateCardsListAreas();
+
+    $('div.byArea').html(construirCardListAreas(headerList));
+    
+
+    
+
+
+
 });
 
 
