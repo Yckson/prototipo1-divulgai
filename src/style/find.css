@@ -1,0 +1,18 @@
+@import url('./style.css');
+
+div.brand{
+    width: 100%;
+    padding: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+div.brand > h1{
+    font-size: 38pt;
+    font-weight: bold;
+}
+
+div.brand > h2{
+    font-size: 24pt;
+    font-weight: 100;
+}
