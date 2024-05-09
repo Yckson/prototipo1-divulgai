@@ -1,5 +1,6 @@
 function loadPage(){
     const pageContent = buscar(GET.id, 'id')[0];
+    $('div.imageBrand').css('background-image', 'url(./../../temp_events/img/img/' + pageContent.img + ')');
     loadContentDesc(pageContent.descricao);
     loadDesc(pageContent);
 

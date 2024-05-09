@@ -62,7 +62,7 @@ const EVENTOS = [
    <!-- Parágrafo com Texto -->
    <p>As inscrições para a bolsa estão abertas entre 4 de março e 20 de maio de 2024.</p>
    `,
-},
+}
 {
    id: '3',
    nome: "Concurso de Redação para Jovens Economistas",

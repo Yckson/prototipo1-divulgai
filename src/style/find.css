@@ -1,8 +1,8 @@
 @import url('./style.css');
 
 div.brand{
-    width: 100%;
-    padding: 30px;
+    width: 90%;
+    padding: 30px 0;
     color: white;
     margin-top: 40px;
 }
@@ -14,5 +14,129 @@ div.brand > h1{
 
 div.brand > h2{
     font-size: 24pt;
-    font-weight: 100;
+    font-weight: lighter;
+}
+
+div.searchTab{
+    display: flex;
+    width: calc(90% - 60px);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+
+}
+
+div.filters{
+    width: calc(80% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+input.searchText{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4601ad;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+div.subFilters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+button.buttonFilter{
+    border-radius: 25px;
+    height: max-content;
+    color: rgba(128, 128, 128, 0.804);
+    cursor: pointer;
+}
+
+div.subFilters > button.buttonFilter{
+    background-color: transparent;
+    padding: 5px 28px;
+    border: 1px solid rgba(0, 0, 0, 0.373);
+    font-size: medium;
+}
+
+button.activateFilters{
+    background-color: #5600d3 !important;
+    color: white;
+    padding: 5px 30px !important;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 30%;
+    text-align: left;
+}
+
+button.searchButton{
+    width: 20%;
+}
+
+button.searchButton{
+    padding: 4px;
+    border: none;
+    background-color: #5600d3;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+div.events{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(90% - 60px);
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: start;
+
+}
+
+a.cardListAreas{
+    text-decoration: none;
+    color: #5600d3;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: calc(100% / 4 - 20px);
+    margin: 10px 0;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+div.imgPlaceHolderListAreas{
+    height: 150px;
+    background-size: cover;
+}
+
+div.cardListAreasDesc{
+    padding: 10px;
+    text-align: left;
+    font-size: 12pt;
+}
+
+div.cardListAreasDesc > span.date{
+    display: block;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #288BE4;
+    margin: 5px 0;
+}
+
+div.cardListAreasDesc > span.cardListLocation{
+    display: block;
+    font-weight: bold;
+    font-size: 10pt;
+    margin: 5px 0;
 }

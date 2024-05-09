@@ -1,6 +1,6 @@
 let QTD_CARDS_LISTAREAS = 4;
 let QTD_CARDS_LISTAREAS_LINHAS = 3;
-const headerList = ['Eventos', 'Cursos', 'Bolsas de Estudo'];
+const headerList = ['Eventos', 'Educação', 'Bolsas de Estudo'];
 
 function construirCartoes(area){
     let cardsPorArea = buscar(area, 'area');
@@ -10,7 +10,7 @@ function construirCartoes(area){
         if (cardsPorArea[i] != undefined) {
             cards += `
             <a href="./src/views/evento/?id=${cardsPorArea[i].id}" class="cardListAreas">
-                <div class="imgPlaceHolderListAreas" style="background-image: url('./src/temp_events/img/${cardsPorArea[i].iconImg}');"></div>
+                <div class="imgPlaceHolderListAreas" style="background-image: url('./src/temp_events/img/img/${cardsPorArea[i].iconImg}');"></div>
                 <div class="cardListAreasDesc">
                     <span class="date">${cardsPorArea[i].dataExtenso}</span>
                     <span class="cardListTitle">${cardsPorArea[i].nome}</span>

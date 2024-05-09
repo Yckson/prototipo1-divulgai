@@ -3,8 +3,8 @@ const GET = {}
 
 
 
-function buscar(texto, onde){
-    const eventosBuscados = EVENTOS.filter((evento)=>{
+function buscar(texto, onde, listaEventos = EVENTOS){
+    const eventosBuscados = listaEventos.filter((evento)=>{
         return evento[onde].toLowerCase().includes(texto.toLowerCase());
     });
 
