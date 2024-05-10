@@ -132,6 +132,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     CALENDARIO = $('#btnData').flatpickr({
         locale: 'pt',
+        disableMobile: "true",
     })
 
     $('#btnData').on('click', function(){
