@@ -51,14 +51,14 @@ div.subFilters{
 
 }
 
-button.buttonFilter{
+.buttonFilter{
     border-radius: 25px;
     height: max-content;
     color: rgba(128, 128, 128, 0.804);
     cursor: pointer;
 }
 
-div.subFilters > button.buttonFilter{
+div.subFilters > .buttonFilter{
     background-color: transparent;
     padding: 5px 28px;
     border: 1px solid rgba(0, 0, 0, 0.373);
@@ -121,9 +121,14 @@ div.imgPlaceHolderListAreas{
 }
 
 div.cardListAreasDesc{
+    position: relative;
     padding: 10px;
     text-align: left;
     font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
 }
 
 div.cardListAreasDesc > span.date{
@@ -139,4 +144,39 @@ div.cardListAreasDesc > span.cardListLocation{
     font-weight: bold;
     font-size: 10pt;
     margin: 5px 0;
+}
+
+
+
+div.categoryDropdown{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+    transform: translate(-25%, 10px);
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.4);
+    
+}
+
+button.categoryButton{
+    background-color: #5600d3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button.formatEncerrados{
+    background-color: white;
+    border: red solid 1px;
+    color: red;
 }

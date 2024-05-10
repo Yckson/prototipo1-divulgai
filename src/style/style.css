@@ -82,6 +82,10 @@ footer i{
     margin: 0 5px;
 }
 
+.hide{
+    display: none !important;
+}
+
 
 
 /*--------------MEDIA QUERIES-------------*/

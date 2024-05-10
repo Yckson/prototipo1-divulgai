@@ -291,9 +291,13 @@ div.imgPlaceHolderListAreas{
 }
 
 div.cardListAreasDesc{
+    display: flex;
     padding: 10px;
     text-align: left;
     font-size: 12pt;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
 }
 
 div.cardListAreasDesc > span.date{

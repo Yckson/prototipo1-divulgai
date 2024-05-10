@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divulga Aí! -</title>
     <link rel="stylesheet" href="./../../style/find.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
 </head>
 <body>
     <img class="banner type2" src="./../../img/banner3.png" alt="" srcset="">
@@ -27,10 +29,24 @@
         <div class="filters">
             <input type="text" class="searchText">
             <div class="subFilters">
-                <button class="activateFilters buttonFilter"><i class="fa fa-filter" aria-hidden="true"></i> Filtros</button>
-                <button class="buttonFilter">Data <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                <button class="buttonFilter">Categoria <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                <button class="buttonFilter">Formato <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                <button class="activateFilters buttonFilter" id="clearFilters"><i class="fa fa-filter" aria-hidden="true"></i> Filtros</button>
+                <label id="btnData" class="buttonFilter">Data <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                <div class="buttonFilter" id="btnCategory">Categoria <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="categoryDropdown hide" id="categoryDropdown">
+                        <button class="categoryButton category">Palestra</button>
+                        <button class="categoryButton category">Oficina</button>
+                        <button class="categoryButton category">Evento</button>
+                        <button class="categoryButton category">Curso</button>
+                        <button class="categoryButton category">Outros</button>
+                    </div>
+                </div>
+                <div class="buttonFilter" id="btnFormat">Formato <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="categoryDropdown hide" id="formatDropdown">
+                        <button class="categoryButton format">Online</button>
+                        <button class="categoryButton format">Presencial</button>
+                        <button class="categoryButton format formatEncerrados">Encerrados</button>
+                    </div>
+                </div>
                 <button class="buttonFilter"><i class="fa fa-star" aria-hidden="true"></i> Favoritos</button>
             </div>
         </div>
@@ -48,6 +64,8 @@
     <script src="./../../js/main.js"></script>
     <script src="./../../js/encontrar_evento.js"></script>
     <script src="https://kit.fontawesome.com/c6444e5d29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
     
 </body>
 </html>

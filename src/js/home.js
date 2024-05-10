@@ -1,6 +1,6 @@
 let QTD_CARDS_LISTAREAS = 4;
 let QTD_CARDS_LISTAREAS_LINHAS = 3;
-const headerList = ['Eventos', 'Educação', 'Bolsas de Estudo'];
+const headerList = ['Eventos', 'Educação', 'Concurso'];
 
 function construirCartoes(area){
     let cardsPorArea = buscar(area, 'area');

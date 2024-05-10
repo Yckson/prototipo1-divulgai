@@ -1,14 +1,16 @@
+
 const EVENTOS = [
 
     //Não esquecer da vírugula no final!!!
 {
    id: '2',
    nome: "Bolsas de Estudo da Fundação Botín para Curso de Políticas Públicas na Espanha",
-   dataExtenso: 'Período do curso: entre outubro e dezembro de 2024',
-   data: 'Outubro - Dezembro, 2024',
+   dataExtenso: 'Até dezembro de 2024',
+
+   data: '2024-12-31',
    img: "fundacaobotin_.jpg",
    iconImg: "fundacaobotin_.jpg",
-   local: "Santander, Madri, Santiago de Compostela, Salamanca (Espanha), e Cartagena de Indias, Colômbia",
+   local: "Espanha e Colômbia",
    area: "Educação",
    descricao: `<!--Título Principal -->
    <h1>Bolsas de Estudo da Fundação Botín para Curso de Políticas Públicas na Espanha</h1>
@@ -56,8 +58,8 @@ const EVENTOS = [
 {
    id: '3',
    nome: "Concurso de Redação para Jovens Economistas",
-   dataExtenso: 'Prazo final para submissão de trabalhos: 3 de junho de 2024',
-   data: '3 de junho de 2024',
+   dataExtenso: 'Até 3 de junho de 2024',
+   data: '2024-06-03',
    img: "economista-1024x576.jpeg",
    iconImg: "economista-1024x576.jpeg",
    local: "Online",
@@ -102,8 +104,8 @@ const EVENTOS = [
 {
    id: '4',
    nome: "Almejando Estudar na Universidade de Cambridge?",
-   dataExtenso: 'Prazo vai até 16 de outubro de 2024',
-   data: '16 de outubro de 2024',
+   dataExtenso: 'Até 16 de outubro de 2024',
+   data: '2024-10-16',
    img: "cambridge.jpg",
    iconImg: "cambridge.jpg",
    local: "Reino Unido",
@@ -160,8 +162,8 @@ const EVENTOS = [
 {
    id: '5',
    nome: "Estágio de Verão na CERN, Suíça",
-   dataExtenso: 'Prazo de Inscrição: 31 de outubro de 2024',
-   data: '31 de outubro de 2024',
+   dataExtenso: '31 de outubro de 2024',
+   data: '2024-10-31',
    img: "images.png",
    iconImg: "images.png",
    local: "CERN, Genebra, Suíça",
@@ -230,8 +232,8 @@ const EVENTOS = [
 {
    id: '6',
    nome: "Programa Plural+ da ONU: Crie um Vídeo e Ganhe uma Viagem para Nova York!",
-   dataExtenso: 'Prazo final: 31 de maio de 2024',
-   data: '31 de maio de 2024',
+   dataExtenso: '31 de maio de 2024',
+   data: '2024-05-31',
    img: "PLURAL-30-c.jpg",
    iconImg: "PLURAL-30-c.jpg",
    local: "Online",
@@ -287,8 +289,8 @@ const EVENTOS = [
 {
    id: '7',
    nome: "Residência Artística na Espanha pela Fundação Botín - Inscrições Abertas até 17 de Maio!",
-   dataExtenso: 'Prazo para inscrições vai até dia 17 de maio de 2024',
-   data: '17 de maio de 2024',
+   dataExtenso: 'Até dia 17 de maio de 2024',
+   data: '2024-05-17',
    img: "images.jpg",
    iconImg: "images.jpg",
    local: "Espanha",
@@ -346,12 +348,12 @@ const EVENTOS = [
 },
 {
    id: '8',
-   nome: "Concurso 'Minha Experiência Superando Conflitos': Uma Oportunidade Única para Jovens!",
-   dataExtenso: 'Data Limite: 15 de junho de 2024',
-   data: '15 de junho de 2024',
+   nome: "Concurso 'Minha Experiência Superando Conflitos'",
+   dataExtenso: '15 de junho de 2024',
+   data: '2024-06-15',
    img: "selfie-portrait-of-young-creative-teenager-student-2022-12-09-04-34-22-utc-1.jpg",
    iconImg: "selfie-portrait-of-young-creative-teenager-student-2022-12-09-04-34-22-utc-1.jpg",
-   local: "Online (participação aberta a jovens de todo o mundo)",
+   local: "Online",
    area: "Concurso",
    descricao: `<!--Título Principal -->
    <h1>Concurso 'Minha Experiência Superando Conflitos': Uma Oportunidade Única para Jovens!</h1>
@@ -405,8 +407,8 @@ const EVENTOS = [
 {
    id: '9',
    nome: "Bolsas de Estudo para Mulheres em STEM do British Council",
-   dataExtenso: 'O prazo de inscrição varia de acordo com a universidade.',
-   data: 'Varia de acordo com a universidade',
+   dataExtenso: 'Até 31 de dezembro de 2024.',
+   data: '2024-12-31',
    img: "British-Council-STEM-Scholarships.jpg",
    iconImg: "British-Council-STEM-Scholarships.jpg",
    local: "Reino Unido",
@@ -452,12 +454,12 @@ const EVENTOS = [
 },
 {
    id: '10',
-   nome: "Concurso de Redação Immerse Education: Uma Oportunidade para Estudar no Exterior!",
-   dataExtenso: 'O prazo para a próxima edição do concurso é 12 de setembro de 2024.',
-   data: '12 de setembro de 2024',
+   nome: "Concurso de Redação Immerse Education",
+   dataExtenso: '12 de setembro de 2024.',
+   data: '2024-09-12',
    img: "yt-overlay.webp",
    iconImg: "yt-overlay.webp",
-   local: "Diversos países ao redor do mundo",
+   local: "Mundo",
    area: "Educação",
    descricao: `<!--Título Principal -->
    <h1>Concurso de Redação Immerse Education: Uma Oportunidade para Estudar no Exterior!</h1>
@@ -499,8 +501,8 @@ const EVENTOS = [
 {
    id: '11',
    nome: "Olimpíada de Literatura (OL)",
-   dataExtenso: 'Data: 06/02 a 02/05',
-   data: '06 de fevereiro a 02 de maio',
+   dataExtenso: '02 de maio de 2024.',
+   data: '2024-05-02',
    img: "1f339e_23310d0f25384e4cb9e11ba5a9b86bb9~mv2.png",
    iconImg: "1f339e_23310d0f25384e4cb9e11ba5a9b86bb9~mv2.png",
    local: "Online",
@@ -536,8 +538,8 @@ const EVENTOS = [
 {
    id: '12',
    nome: "Olimpíada Brasileira de Astronomia e Astronáutica (OBA) e Mostra Brasileira de Foguetes (MOBFOG)",
-   dataExtenso: 'Inscrições: Até 1º de maio de 2024. Prova da OBA: 17 de maio de 2024. Lançamentos de foguetes da MOBFOG: Até 17 de maio de 2024.',
-   data: '1º de maio e 17 de maio de 2024',
+   dataExtenso: '17 de maio de 2024',
+   data: '2024-05-17',
    img: "OBA_LOGO_2018a.png",
    iconImg: "OBA_LOGO_2018a.png",
    local: "Online",
@@ -582,8 +584,8 @@ const EVENTOS = [
 {
    id: '13',
    nome: "Olimpíada de Português (OP)",
-   dataExtenso: 'Fase 1: Maio de 2024. Fase 2: Agosto de 2024',
-   data: 'Maio e Agosto de 2024',
+   dataExtenso: 'Maio de 2024',
+   data: '2024-05-31',
    img: "fundo.webp",
    iconImg: "fundo.webp",
    local: "Online",
@@ -655,8 +657,8 @@ const EVENTOS = [
 {
    id: '14',
    nome: "Olimpíada Brasileira de Robótica (OBR)",
-   dataExtenso: 'Data de inscrições: até 10/05',
-   data: 'Até 10 de maio de 2024',
+   dataExtenso: '10 de maio de 2024',
+   data: '2024-05-10',
    img: "images (1).png",
    iconImg: "images (1).png",
    local: "Online",
@@ -700,11 +702,11 @@ const EVENTOS = [
 {
    id: '15',
    nome: "Olimpíada de Redação Letrus",
-   dataExtenso: 'As inscrições estão abertas até 15 de setembro de 2024.',
-   data: 'Até 15 de setembro de 2024',
+   dataExtenso: '15 de setembro de 2024.',
+   data: '2024-09-15',
    img: "letrus.jpg",
    iconImg: "letrus.jpg",
-   local: "Online (participação aberta a alunos de todo o Brasil)",
+   local: "Online",
    area: "Redação",
    descricao: `<!--Título Principal -->
    <h1>Olimpíada de Redação Letrus</h1>
@@ -772,8 +774,8 @@ const EVENTOS = [
 {
    id: '16',
    nome: "Olimpíada Internacional de Matemática sem Fronteiras",
-   dataExtenso: 'Prazo de inscrição: 15 de maio.',
-   data: '15 de maio',
+   dataExtenso: '15 de maio',
+   data: '2024-05-15',
    img: "estudantes-participam-da-olimpiada-matematica-sem-fronteiras.jpg",
    iconImg: "estudantes-participam-da-olimpiada-matematica-sem-fronteiras.jpg",
    local: "Online",
@@ -804,11 +806,11 @@ const EVENTOS = [
 {
    id: '17',
    nome: "Programa Nacional Olimpíadas de Química",
-   dataExtenso: 'Datas: 17 de maio e 15 de junho',
-   data: '17 de maio e 15 de junho',
+   dataExtenso: '17 de maio',
+   data: '2024-05-17',
    img: "nacional.jpg",
    iconImg: "nacional.jpg",
-   local: "Inscrições online",
+   local: "Online",
    area: "Química",
    descricao: `<!--Título Principal -->
    <h1>Programa Nacional Olimpíadas de Química</h1>
@@ -842,8 +844,8 @@ const EVENTOS = [
 {
    id: '18',
    nome: "Olimpíada Mandacaru de Matemática",
-   dataExtenso: 'Data: Até 25 de maio',
-   data: 'Até 25 de maio',
+   dataExtenso: 'Até 25 de maio',
+   data: '2024-05-25',
    img: "channels4_profile.jpg",
    iconImg: "channels4_profile.jpg",
    local: "Todo o Brasil",
@@ -894,8 +896,8 @@ const EVENTOS = [
 {
    id: '19',
    nome: "Olimpíada Brasileira de Física 2024 (OBF)",
-   dataExtenso: 'Período de inscrição: 20 de março de 2024 até a data de publicação dos resultados finais.',
-   data: '20 de março de 2024 até a data de publicação dos resultados finais',
+   dataExtenso: '20 de março',
+   data: '2024-03-20',
    img: "obf.png",
    iconImg: "obf.png",
    local: "Todo o Brasil",
@@ -952,7 +954,7 @@ const EVENTOS = [
    id: '20',
    nome: "Maratona SBC de Programação",
    dataExtenso: '22 de outubro de 2023',
-   data: '22/10/23',
+   data: '2023-10-22',
    img: "channels4_profile (1).jpg",
    iconImg: "channels4_profile (1).jpg",
    local: "Online",
@@ -1041,8 +1043,8 @@ const EVENTOS = [
 {
    id: '21',
    nome: "Olimpíada Brasileira do Ensino Superior de Química (OBESQ)",
-   dataExtenso: '01 de junho a 04 de julho',
-   data: '01/06 até 04/07',
+   dataExtenso: '04 de julho',
+   data: '2024-06-04',
    img: "logo_2.png",
    iconImg: "logo_2.png",
    local: "Diversas cidades do Brasil",
@@ -1087,11 +1089,11 @@ const EVENTOS = [
 {
    id: '22',
    nome: "Concurso Internacional de Matemática para Estudantes Universitários (IMC)",
-   dataExtenso: '5 a 11 de agosto de 2024',
-   data: '5/08/24 até 11/08/24',
+   dataExtenso: '11 de agosto de 2024',
+   data: '2024-08-11',
    img: "matematica-o-que-e-conceito-historia-e-importancia.jpg",
    iconImg: "matematica-o-que-e-conceito-historia-e-importancia.jpg",
-   local: "Universidade Americana da Bulgária em Blagoevgrad, Bulgária",
+   local: "Bulgária",
    area: "Eventos",
    descricao: `<!--Título Principal -->
    <h1>Concurso Internacional de Matemática para Estudantes Universitários (IMC)</h1>
@@ -1139,8 +1141,8 @@ const EVENTOS = [
 {
    id: '23',
    nome: "Programa Santander Idiomas",
-   dataExtenso: '15 de janeiro a 20 de dezembro',
-   data: '15/01 até 20/12',
+   dataExtenso: '20 de dezembro',
+   data: '2024-12-20',
    img: "images (1).jpg",
    iconImg: "images (1).jpg",
    local: "Online",
@@ -1197,8 +1199,8 @@ const EVENTOS = [
 {
    id: '24',
    nome: "Curso Online 'Learn ChatGPT - 2024'",
-   dataExtenso: '18 de março a 11 de junho de 2024',
-   data: '18/03/24 a 11/06/24',
+   dataExtenso: '11 de junho de 2024',
+   data: '2024-06-11',
    img: "d844f3b6-af3d-4123-b1b0-634d0a9bf616.webp",
    iconImg: "d844f3b6-af3d-4123-b1b0-634d0a9bf616.webp",
    local: "Online",
@@ -1260,7 +1262,7 @@ const EVENTOS = [
    id: '25',
    nome: "Workshop sobre Experiência Internacional e Application com João Lucas Oliveira Silva",
    dataExtenso: '26 de maio de 2024',
-   data: '26/05/2024',
+   data: '2024-05-26',
    img: "0_OsgVp5TRWult1c64.png",
    iconImg: "0_OsgVp5TRWult1c64.png",
    local: "Online",
@@ -1307,8 +1309,8 @@ const EVENTOS = [
 {
    id: '26',
    nome: "Curso de Marketing Digital da Santander Open Academy",
-   dataExtenso: 'Aberto até 30 de junho de 2024',
-   data: 'Aberto até 30/06/2024',
+   dataExtenso: '30 de junho de 2024',
+   data: '2024-06-30',
    img: "5-fatores-que-otimizam-seus-resultados-de-marketing-digital-973x615.jpeg",
    iconImg: "5-fatores-que-otimizam-seus-resultados-de-marketing-digital-973x615.jpeg",
    local: "Online",
@@ -1358,8 +1360,8 @@ const EVENTOS = [
 {
    id: '27',
    nome: "Curso Educacional de Hemostasia e Trombose",
-   dataExtenso: '17 a 18 de maio de 2024',
-   data: '17/05/2024 - 18/05/2024',
+   dataExtenso: '18 de maio de 2024',
+   data: '2024-05-18',
    img: "Clínico-Médico-scaled.jpg",
    iconImg: "Clínico-Médico-scaled.jpg",
    local: "Belo Horizonte, MG",
@@ -1400,11 +1402,11 @@ const EVENTOS = [
 {
    id: '28',
    nome: "VI Encontro do Comitê de Hematologia e Hemoterapia Pediátrica da ABHH",
-   dataExtenso: '7 e 8 de junho de 2023',
-   data: '07/06/2023 - 08/06/2023',
+   dataExtenso: '8 de junho de 2023',
+   data: '2023-06-08',
    img: "EVENTOS-SITE-ABHH-1.png",
    iconImg: "EVENTOS-SITE-ABHH-1.png",
-   local: "Hotel Meliá Ibirapuera, São Paulo",
+   local: "São Paulo, SP",
    area: "Eventos",
    descricao: `<!--Título Principal -->
    <h1>VI Encontro do Comitê de Hematologia e Hemoterapia Pediátrica da ABHH</h1>
@@ -1434,11 +1436,11 @@ const EVENTOS = [
 {
    id: '29',
    nome: "Congresso Carioca de Estudantes de Medicina (CCMED)",
-   dataExtenso: '31 de maio a 02 de junho de 2024',
-   data: '31/05/2024 - 02/06/2024',
+   dataExtenso: '02 de junho de 2024',
+   data: '2024-06-02',
    img: "logosigla-nome.png",
    iconImg: "logosigla-nome.png",
-   local: "Expomag, Rua Beatriz Larragoiti Lucas, s/n – Cidade Nova, Centro – Rio de Janeiro/RJ",
+   local: "Rio de Janeiro/RJ",
    area: "Eventos",
    descricao: `<!--Título Principal -->
    <h1>Congresso Carioca de Estudantes de Medicina (CCMED)</h1>
@@ -1462,11 +1464,11 @@ const EVENTOS = [
 {
    id: '30',
    nome: "X Congresso Internacional de Pesquisa (Auto)Biográfica",
-   dataExtenso: '20 a 23 de maio de 2024',
-   data: '20/05/2024 - 23/05/2024',
+   dataExtenso: '23 de maio de 2024',
+   data: '2024-05-23',
    img: "images (2).png",
    iconImg: "images (2).png",
-   local: "UNEB, Salvador, Bahia",
+   local: "Salvador, Bahia",
    area: "Eventos",
    descricao: `<!--Título Principal -->
    <h1>X Congresso Internacional de Pesquisa (Auto)Biográfica</h1>
@@ -1500,8 +1502,8 @@ const EVENTOS = [
 {
    id: '31',
    nome: "Congresso Nacional Online de Pedagogia",
-   dataExtenso: '6 a 8 de maio de 2024',
-   data: '06/05/2024 - 08/05/2024',
+   dataExtenso: '8 de maio de 2024',
+   data: '2024-05-08',
    img: "9qcih7z9mxzu868ktz1qr1hlguol.jpg",
    iconImg:"9qcih7z9mxzu868ktz1qr1hlguol.jpg",
    local: "Online",
@@ -1563,3 +1565,6 @@ const EVENTOS = [
    Link para o site do evento</p>`,
 },
 ];
+
+
+
