@@ -137,7 +137,7 @@ $(document).ready(function(){
 
     $('#btnData').on('click', function(){
         usarFiltroData = true;
-        $('#btnData').toggleClass('subFilterChecked');
+        $('#btnData').addClass('subFilterChecked');
         $('#clearFilters > span').text('Limpar Filtros');
         $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
     });
@@ -170,7 +170,7 @@ $(document).ready(function(){
     $('.category').on('click', function(){
         const categoria = this.innerText;
         usarFiltroCategoria = categoria.toLowerCase();
-        $('#btnCategory').toggleClass('subFilterChecked');
+        $('#btnCategory').addClass('subFilterChecked');
         $('#btnCategory > span').html(categoria);
         $('#clearFilters > span').text('Limpar Filtros');
         $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
@@ -180,7 +180,7 @@ $(document).ready(function(){
     $('.format').on('click', function(){
         const formato = this.innerText;
         usarFiltroFormato = formato.toLowerCase();
-        $('#btnFormat').toggleClass('subFilterChecked');
+        $('#btnFormat').addClass('subFilterChecked');
         $('#btnFormat > span').html(formato);
         $('#clearFilters > span').text('Limpar Filtros');
         $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
@@ -189,7 +189,7 @@ $(document).ready(function(){
     $('#btnFav').on('click', function(){
         usarFiltroFavoritos = true;
         $('#clearFilters > span').text('Limpar Filtros');
-        $('#btnFav').toggleClass('subFilterFav');
+        $('#btnFav').addClass('subFilterFav');
         $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
     });
 
@@ -200,6 +200,7 @@ $(document).ready(function(){
         usarFiltroCategoria = false;
         usarFiltroFormato = false;
         usarFiltroFavoritos = false;
+
 
         $('.searchText').val('');
 
