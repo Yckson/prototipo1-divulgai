@@ -1,6 +1,6 @@
 let QTD_CARDS_LISTAREAS = 4;
 let QTD_CARDS_LISTAREAS_LINHAS = 3;
-const headerList = ['Eventos', 'Educação'];
+const headerList = ['Concurso', 'Eventos', 'Educação'];
 
 function construirCartoes(area){
     let cardsPorArea = buscar(area, 'area');
@@ -57,9 +57,7 @@ function recalculateCardsListAreas(){
         }
 
 
-        for (let i = 0; i < $('.cardListAreas').length; i++) {
-                $('.cardListAreas').eq(i).hide();          
-        }
+        $('.cardListAreas').hide();   
         for (let i = 0; i < $('.cardListAreas').length; i++) {
             if (i <= QTD_CARDS_LISTAREAS - 1){
                 for (let j = 0; j < QTD_CARDS_LISTAREAS_LINHAS; j++) {
@@ -75,9 +73,9 @@ function recalculateCardsListAreas(){
 }
 
 $(document).ready(function() {
-    recalculateCardsListAreas();
 
     $('div.byArea').html(construirCardListAreas(headerList));
+    recalculateCardsListAreas();
     
 
     
