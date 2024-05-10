@@ -13,8 +13,8 @@ function loadContentDesc(descricao){
 
 function loadDesc(content){
     $('div.eventInfoDesc > h1').text(content.nome);
-    $('span#prazo').html(`<i class="fa fa-calendar" aria-hidden="true"></i>` + content.data);
-    $('span#local').html(`<i class="fa fa-map-marker" aria-hidden="true"></i>` + content.local);
+    $('span#prazo').html(`<i class="fa fa-calendar" aria-hidden="true"></i> ` + content.dataExtenso);
+    $('span#local').html(`<i class="fa fa-map-marker" aria-hidden="true"></i> ` + content.local);
 }
 
 $(document).ready(function() {
