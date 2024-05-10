@@ -55,7 +55,7 @@ $(document).ready(function() {
     getParamsURL();
 
     $('nav img').click(function(){
-        window.location.href = '/';
+        window.location.href = '/prototipo1-divulgaai/';
     });
 
 
