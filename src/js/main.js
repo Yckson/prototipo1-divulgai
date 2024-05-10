@@ -21,6 +21,32 @@ function getParamsURL(){
     );
 }
 
+function pegarFavoritos(){
+    if(localStorage.getItem('favoritos')){
+        return JSON.parse(localStorage.getItem('favoritos'));
+    }
+    else{
+        return [];
+    }
+}
+
+function salvarFavoritos(favoritos){
+    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+}
+
+function adicionarFavorito(id){
+    const favoritos = pegarFavoritos();
+    favoritos.push(id);
+    salvarFavoritos(favoritos);
+}
+
+function removerFavorito(id){
+    const favoritos = pegarFavoritos();
+    const index = favoritos.indexOf(id);
+    favoritos.splice(index, 1);
+    salvarFavoritos(favoritos);
+}
+
 
 
 

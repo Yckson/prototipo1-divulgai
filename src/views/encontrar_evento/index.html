@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divulga Aí! -</title>
+    <title>Divulga Aí! - Encontrar</title>
     <link rel="stylesheet" href="./../../style/find.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     
@@ -29,7 +29,10 @@
         <div class="filters">
             <input type="text" class="searchText">
             <div class="subFilters">
-                <button class="activateFilters buttonFilter" id="clearFilters"><i class="fa fa-filter" aria-hidden="true"></i> Filtros</button>
+                <button class="activateFilters buttonFilter" id="clearFilters">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                    <span>Filtros</span>
+                </button>
                 <label id="btnData" class="buttonFilter">Data <i class="fa fa-angle-down" aria-hidden="true"></i></label>
                 <div class="buttonFilter" id="btnCategory">Categoria <i class="fa fa-angle-down" aria-hidden="true"></i>
                     <div class="categoryDropdown hide" id="categoryDropdown">
@@ -40,17 +43,22 @@
                         <button class="categoryButton category">Outros</button>
                     </div>
                 </div>
-                <div class="buttonFilter" id="btnFormat">Formato <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="buttonFilter" id="btnFormat">
+                    <span>Formato</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                     <div class="categoryDropdown hide" id="formatDropdown">
                         <button class="categoryButton format">Online</button>
                         <button class="categoryButton format">Presencial</button>
                         <button class="categoryButton format formatEncerrados">Encerrados</button>
                     </div>
                 </div>
-                <button class="buttonFilter"><i class="fa fa-star" aria-hidden="true"></i> Favoritos</button>
+                <button class="buttonFilter" id="btnFav"><i class="fa fa-star" aria-hidden="true"></i> Favoritos</button>
             </div>
         </div>
-        <button class="searchButton buttonFilter">ENCONTRAR <i class="fa fa-search" aria-hidden="true"></i></button>
+        <button class="searchButton buttonFilter" id="btnEncontrar">
+            <span>ENCONTRAR</span> 
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
     </div>
     <div class="events">
         

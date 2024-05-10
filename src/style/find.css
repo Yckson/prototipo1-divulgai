@@ -180,3 +180,211 @@ button.formatEncerrados{
     border: red solid 1px;
     color: red;
 }
+
+.subFilterChecked{
+    color: white !important;
+    background-color: #5600d3 !important;
+}
+
+.subFilterFav{
+    color: rgb(255, 213, 0) !important;
+    background-color: white !important;
+    border-color: rgb(255, 213, 0) !important;
+}
+
+
+
+
+
+
+
+
+
+/*------------------MEDIA QUERIES -----------------*/
+
+
+a.cardListAreas:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    scale: 1.05;
+}
+
+.buttonFilter:hover{
+    background-color: #5600d3 !important;
+    color: white;
+    scale: 1.02 ;
+
+    transition: all 0.3s;
+}
+
+button#btnEncontrar:hover{
+    background-color: white !important;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    color: #5600d3;
+}
+
+@media screen and (max-width: 1465px){
+    a.card{
+        width: 60%;
+        
+    }
+
+    div.brand > h1{
+        font-size: 32pt;
+    }
+
+    div.brand > h2{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    div.brand{
+        margin-top: 10px;
+    }
+
+    div.searchTab{
+        padding: 25px 15px;
+    }
+
+    img.banner{
+        height: 450px !important;
+    }
+
+    a.cardListAreas{
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    div.subFilters > .buttonFilter{
+        padding: 5px 15px;
+    }
+
+    button.searchButton{
+        font-size: 1.2em !important;
+        padding: 7px !important;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    button.searchButton{
+        font-size: 1em !important;
+        padding: 7px 0px !important;
+    }
+
+    div.subFilters > .buttonFilter{
+        font-size: small;
+    }
+
+    input.searchText{
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    div.brand > h1{
+        font-size: 28pt;
+    }
+
+    div.brand > h2{
+        font-size: 18pt;
+    }
+
+    a.cardListAreas{
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 900px){
+    img.banner{
+        height: 550px !important;
+    }
+}
+
+@media screen and (max-width: 875px){
+    div.subFilters{
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    div.subFilters > .buttonFilter{
+        margin: 5px 0;
+        width: calc(50% - 10px);
+
+    }
+
+    button.searchButton{
+        font-size: small!important;
+        padding: 7px 0px !important;
+    }
+}
+
+@media screen and (max-width: 780px){
+    div.searchTab{
+        width: calc(100% - 60px) !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+    div.searchTab{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    div.searchTab > *{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    a.cardListAreas{
+        width: calc(70%);
+        margin: 20px auto;
+    }
+
+    div.banner{
+        height: 400px;
+    
+    }
+
+    div.brand > h1{
+        font-size: 24pt;
+    }
+
+    div.brand > h2{
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 580px){
+    div.brand > h1{
+        font-size: 20pt;
+    }
+
+    div.brand > h2{
+        font-size: 14pt;
+    }
+
+    a.cardListAreas{
+        width: calc(100%);
+    }
+}
+
+@media screen and (max-width: 500px){
+    div.brand > h1{
+        font-size: 18pt;
+    }
+
+    div.brand > h2{
+        font-size: 12pt;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 430px){
+    img.banner{
+        height: 500px !important;
+    }
+
+}

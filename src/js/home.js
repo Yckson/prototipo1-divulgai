@@ -32,7 +32,7 @@ function construirCardListAreas(headerList){
         listAreas += `
             <div class="listAreasHeader">
                 <h3>${headerList[c]}</h3>
-                <a href="#">Ver mais <i class="fa fa-caret-right" aria-hidden="true"></i></a>   
+                <a href="./src/views/encontrar_evento/">Ver mais <i class="fa fa-caret-right" aria-hidden="true"></i></a>   
             </div>
         `;
         listAreas += construirCartoes(headerList[c]);

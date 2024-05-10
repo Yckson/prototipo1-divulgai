@@ -86,6 +86,11 @@ footer i{
     display: none !important;
 }
 
+i.favChecked{
+    color: #ffcc00 !important;
+
+}
+
 
 
 /*--------------MEDIA QUERIES-------------*/

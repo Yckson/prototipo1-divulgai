@@ -27,7 +27,13 @@ function construirCartoes(eventos){
                 <div class="cardListAreasDesc">
                     <span class="date">${eventos[posEventoAtual].dataExtenso}</span>
                     <span class="cardListTitle">${eventos[posEventoAtual].nome}</span>
-                    <span class="cardListLocation">${eventos[posEventoAtual].local}</span>
+                    <span class="cardListLocation">${eventos[posEventoAtual].local}
+                        ${
+                            pegarFavoritos().filter((favorito)=>{
+                                return favorito == eventos[posEventoAtual].id;
+                            }).length > 0 ? '<i class="fa fa-star favChecked"></i>' : ''
+                        }
+                    </span>
                 </div>  
             </a>
         `;
@@ -86,6 +92,13 @@ function usarFiltro(filtros){
         }
     }
 
+    if(usarFiltroFavoritos){
+        const favoritos = pegarFavoritos();
+        const eventos = filtro[filtro.length - 1];
+        const eventosFiltrados = eventos.filter(evento => favoritos.includes(evento.id));
+        filtro.push(eventosFiltrados);
+    }
+
     const ultimaFiltragem = filtro.pop();
     const cards = construirCartoes(ultimaFiltragem);
     $('.events').html(cards);
@@ -123,6 +136,9 @@ $(document).ready(function(){
 
     $('#btnData').on('click', function(){
         usarFiltroData = true;
+        $('#btnData').toggleClass('subFilterChecked');
+        $('#clearFilters > span').text('Limpar Filtros');
+        $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
     });
 
     $('#btnCategory').on('click', function(){
@@ -132,6 +148,12 @@ $(document).ready(function(){
     $('#btnFormat').on('click', function(){
         $('#formatDropdown').toggleClass('hide');
     });
+
+    $('.searchText').on('input', function(){
+        $('#clearFilters > span').text('Limpar Filtros');
+        $(window).width() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
+    });
+
 
     $(document).on('click', function(event){
         if (!$(event.target).closest('#btnCategory').length){
@@ -147,12 +169,25 @@ $(document).ready(function(){
     $('.category').on('click', function(){
         const categoria = this.innerText.toLowerCase();
         usarFiltroCategoria = categoria;
+        $('#btnCategory').toggleClass('subFilterChecked');
+        $('#clearFilters > span').text('Limpar Filtros');
+        $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
 
     });
 
     $('.format').on('click', function(){
         const formato = this.innerText.toLowerCase();
         usarFiltroFormato = formato;
+        $('#btnFormat').toggleClass('subFilterChecked');
+        $('#clearFilters > span').text('Limpar Filtros');
+        $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
+    });
+
+    $('#btnFav').on('click', function(){
+        usarFiltroFavoritos = true;
+        $('#clearFilters > span').text('Limpar Filtros');
+        $('#btnFav').toggleClass('subFilterFav');
+        $(window).outerWidth() < 435 &&  $('#clearFilters > span').css('font-size', '0.9em');
     });
 
 
@@ -168,6 +203,15 @@ $(document).ready(function(){
 
         const cards = construirCartoes(EVENTOS);
         $('.events').html(cards);
+
+        $('#btnCategory').removeClass('subFilterChecked');
+        $('#btnFormat').removeClass('subFilterChecked');
+        $('#btnData').removeClass('subFilterChecked');
+        $('#btnFav').removeClass('subFilterFav');
+        $('#clearFilters > span').text('Filtros');
+        
+
+        
     });
 
 
