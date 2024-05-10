@@ -40,6 +40,7 @@ nav{
 
 nav > img {
     width: calc(497px / 2.4);
+    cursor: pointer;
 }
 
 nav a{

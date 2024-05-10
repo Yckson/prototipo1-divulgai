@@ -1,6 +1,6 @@
 let QTD_CARDS_LISTAREAS = 4;
 let QTD_CARDS_LISTAREAS_LINHAS = 3;
-const headerList = ['Eventos', 'Educação', 'Concurso'];
+const headerList = ['Eventos', 'Educação'];
 
 function construirCartoes(area){
     let cardsPorArea = buscar(area, 'area');
@@ -29,6 +29,7 @@ function construirCardListAreas(headerList){
     let listAreas = '';
 
     for (let c = 0; c < headerList.length; c++) {
+        if (headerList[c] != ''){
         listAreas += `
             <div class="listAreasHeader">
                 <h3>${headerList[c]}</h3>
@@ -36,6 +37,7 @@ function construirCardListAreas(headerList){
             </div>
         `;
         listAreas += construirCartoes(headerList[c]);
+        }
         
     }
     return listAreas;

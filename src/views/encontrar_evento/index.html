@@ -17,7 +17,7 @@
                 <a href="#" id="info">Informações</a>
                 <a href="#" id="sobre">Sobre</a>
                 <a href="#" id="encontrarEvento">Encontrar Evento</a>
-                <a href="#" id="contato">Contato</a>
+                <a href="./../contato/" id="contato">Contato</a>
             </div>
         </nav>
         <div class="brand">
@@ -27,20 +27,21 @@
     </div>
     <div class="searchTab">
         <div class="filters">
-            <input type="text" class="searchText">
+            <input type="text" class="searchText" placeholder="Nome do evento...">
             <div class="subFilters">
                 <button class="activateFilters buttonFilter" id="clearFilters">
                     <i class="fa fa-filter" aria-hidden="true"></i>
                     <span>Filtros</span>
                 </button>
                 <label id="btnData" class="buttonFilter">Data <i class="fa fa-angle-down" aria-hidden="true"></i></label>
-                <div class="buttonFilter" id="btnCategory">Categoria <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="buttonFilter" id="btnCategory">
+                    <span>Categoria</span> 
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                     <div class="categoryDropdown hide" id="categoryDropdown">
                         <button class="categoryButton category">Palestra</button>
                         <button class="categoryButton category">Oficina</button>
                         <button class="categoryButton category">Evento</button>
                         <button class="categoryButton category">Curso</button>
-                        <button class="categoryButton category">Outros</button>
                     </div>
                 </div>
                 <div class="buttonFilter" id="btnFormat">

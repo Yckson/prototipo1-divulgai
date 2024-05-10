@@ -54,6 +54,10 @@ function removerFavorito(id){
 $(document).ready(function() {
     getParamsURL();
 
+    $('nav img').click(function(){
+        window.location.href = '/';
+    });
+
 
 
 });
